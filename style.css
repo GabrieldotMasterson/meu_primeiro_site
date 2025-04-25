@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: rgb(39,44,47);
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .textbody {
+    display: flex;
+    flex-grow: column wrap;
+  }
+  
+  .sidebar {
+    width: 60px;
+    background: rgb(7,23,38);
+    border-right: 1px solid rgb(46, 51, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .lang-profile {
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+
+    padding: 2rem;
+    overflow-y: auto; /* permite que uma barra de rolagem vertical seja exibida apenas quando o conteúdo excede as dimensões do elemento,*/
+  }
+  
+  header h2 {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .painel h3,
+  .painel_contact h3,
+  .aulas h3,
+  p {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    background: rgb(7,23,38);
+    border-radius: 10px;
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .course-card {
+    background: rgb(7,23,38);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: wrap;
+    padding: 1rem;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .course-card img {
+    height: 150px;
+  }
+
+  .course-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #new-courses {
+    display: flex;
+    gap: 16px; 
+    flex-wrap: wrap; 
+  }
+  
+  .card img {
+    width: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    
+  }
+  
+  .card-info {
+    margin-left: 1rem;
+    flex: 1;
+  }
+  
+  .progress-bar {
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+  }
+  
+  .fill {
+    background: #48d170;
+    height: 100%;
+  }
+  
+  button {
+    background: #225bc4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* estilo legal */
+  }
+  
+  .aulas a {
+    color: #225bc4;
+    text-decoration: none;
+  }
+
+  .cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 50%;
+    background-color: rgb(46, 51, 54);
+    border-radius: 8px;
+    padding: 15px;
+
+  }
+
+  .contact-info input{
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: 'Segoe UI', sans-serif;
+    
+  }
+
+.painel_contact {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+  #home{
+      position: absolute;
+      left: 3%;
+      padding: 10px;
+      border-radius: 8px;
+      width: 200px;
+      background-color: rgb(7,23,38);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+  }
+
+  .link-sidebar{
+    display: flex;
+    flex-grow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-sidebar div {
+    display: none;
+  }
+
+  .link-sidebar:hover div {
+    display: block;
+  }
